@@ -12,7 +12,7 @@ import (
 func TestTestExporter(t *testing.T) {
 	tp := sdktrace.NewTracerProvider()
 	otel.SetTracerProvider(tp)
-	exporter := new(TestExporter)
+	exporter := new(testExporter)
 	tp.RegisterSpanProcessor(sdktrace.NewSimpleSpanProcessor(exporter))
 
 	assert.Empty(t, exporter.GetRecordedSpans())

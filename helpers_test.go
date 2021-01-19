@@ -16,10 +16,10 @@ func extractAttributesFromSpan(s *export.SpanSnapshot) map[string]label.Value {
 	return data
 }
 
-func setupTestExporter() *TestExporter {
+func setupTestExporter() *testExporter {
 	tp := sdktrace.NewTracerProvider()
 	otel.SetTracerProvider(tp)
-	exporter := new(TestExporter)
+	exporter := new(testExporter)
 	tp.RegisterSpanProcessor(sdktrace.NewSimpleSpanProcessor(exporter))
 
 	return exporter
