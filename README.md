@@ -1,6 +1,6 @@
 # Otel Logr
-[![Go Reference](https://pkg.go.dev/badge/github.com/dmathieu/otel-logr.svg)](https://pkg.go.dev/github.com/dmathieu/otel-logr)
-[![CircleCI](https://circleci.com/gh/dmathieu/otel-logr.svg?style=svg)](https://app.circleci.com/pipelines/github/dmathieu/otel-logr)
+[![Go Reference](https://pkg.go.dev/badge/github.com/dmathieu/otellogr.svg)](https://pkg.go.dev/github.com/dmathieu/otellogr)
+[![CircleCI](https://circleci.com/gh/dmathieu/otellogr.svg?style=svg)](https://app.circleci.com/pipelines/github/dmathieu/otellogr)
 
 Implementation of the [logr](https://github.com/go-logr/logr) interface with [OpenTelemetry Go](https://github.com/open-telemetry/opentelemetry-go)
 

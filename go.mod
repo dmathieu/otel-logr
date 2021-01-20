@@ -1,4 +1,4 @@
-module github.com/dmathieu/otel-logr
+module github.com/dmathieu/otellogr
 
 go 1.15
 
