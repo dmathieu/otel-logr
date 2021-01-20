@@ -27,7 +27,7 @@ type Logger struct {
 func NewLogger(n string) logr.Logger {
 	return Logger{
 		Name:   n,
-		Tracer: otel.GetTracerProvider().Tracer(n),
+		Tracer: otel.Tracer(n),
 	}
 }
 
@@ -88,7 +88,7 @@ func (l Logger) WithValues(kvList ...interface{}) logr.Logger {
 func (l Logger) WithName(name string) logr.Logger {
 	nl := l.clone()
 	nl.Name = l.Name + "/" + name
-	nl.Tracer = otel.GetTracerProvider().Tracer(nl.Name)
+	nl.Tracer = otel.Tracer(nl.Name)
 
 	return nl
 }
